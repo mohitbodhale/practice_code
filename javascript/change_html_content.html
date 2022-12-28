@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+City
+<select name="city" id="city" onchange="selectedOption()">
+    <option value="kopargaon" selected>kopargaon</option>
+    <option value="Pune">Pune</option>
+</select>
+
+
+<select name="state" id="state" onchange="selectedState()">
+    <option value="kopargaon" selected>Ahemednagar</option>
+    <option value="Pune">Pune</option>
+</select>
+
+<h2 id="showData"></h2>
+
+<script>
+    
+//    let x=  document.getElementById('city');
+   function selectedOption(){
+    console.log(document.getElementById('city').value)
+    let x = document.getElementById('city').value;
+    document.getElementById('state').value = x;
+
+   }
+   
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Feb 2019 07:47:12 GMT -->
+</html>
