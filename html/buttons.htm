@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- inline , internal , external  -->
 	<style type="text/css">
 		button{
 			min-width: 40px;
 			min-height: 40px;
-			background-color: #0e0e0ebd;
+			background-color: #0e0e0e;
 			/* border-radius: 50%; */
 			color: #ffffff;
 		}
 		input{
 			min-height: 40px;
+		}
+
+	/*	selector - class , id , global	*/
+		.red{
+			color:orange;
+		}
+
+		#dropdown_select_subtopic{
+			padding: 15px;
+		}
+		select,option{
+			box-sizing: content-box;
+			padding: 10px 0;
 		}
 	</style>
 
@@ -20,35 +34,50 @@
 </head>
 <body>
 	<center>
-		HTML Calculator UI
+		<h1 class="red">HTML</h1>
+		
+		<select>
+			<option>Select</option>
+			<option>Calculator UI</option>
+			<option>Login Form</option>
+		</select>
 		<br><br>
 
-		<input type="" name="">
-		<br>
-		<br>
-		<button>1</button>
-		<button>2</button>
-		<button>3</button>
-		<button>+</button>
-		<br>
-		<br>
-		<button>4</button>
-		<button>5</button>
-		<button>6</button>
-		<button>-</button>
-		<br>
-		<br>
-		<button>7</button>
-		<button>8</button>
-		<button>9</button>
-		<button>X</button>
-		<br>
-		<br>
-		<button>.</button>
-		<button>0</button>
-		<button>=</button>
-		<button>%</button>
-		
+		<div id="calculator_ui">	
+			<input type="" placeholder="Enter No.">
+			<br>
+			<br>
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+			<button>+</button>
+			<br>
+			<br>
+			<button>4</button>
+			<button>5</button>
+			<button>6</button>
+			<button>-</button>
+			<br>
+			<br>
+			<button>7</button>
+			<button>8</button>
+			<button>9</button>
+			<button>X</button>
+			<br>
+			<br>
+			<button>.</button>
+			<button>0</button>
+			<button>=</button>
+			<button>%</button>
+		</div>
+
+		<div id="login_form">	
+			
+		</div>
+
+
+
 	</center>
+
 </body>
 </html>
